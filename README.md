@@ -33,8 +33,19 @@ prince-portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
+├── photo/
+│   ├── java.png
+│   ├── css.png
+│   ├── c++.png
+│   ├── mysql.png
+│   ├── mongo.png
+│   ├── js.png
+│   ├── html.png
+│   ├── powerpoint.png
+│   ├── excel.png
+│   ├── ms_word.png
+│   └── redpulse.png
 ├── Resources/
-│   ├── my pic.png
 │   └── my cv.pdf
 └── README.md
 ```
