@@ -33,8 +33,10 @@ prince-portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
-├── images/
-└── resources/
+├── Resources/
+│   ├── my pic.png
+│   └── my cv.pdf
+└── README.md
 ```
 
 ## Purpose
