@@ -3,19 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prince Mahmud | Portfolio</title>
+
     <meta
       name="description"
-      content="Personal portfolio of Prince Mahmud, Computer Science and Engineering student."
+      content="Personal portfolio of Prince Mahmud, Computer Science and Engineering student at CCN University of Science and Technology."
     />
+
+    <meta name="author" content="Prince Mahmud" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://prince-mahmud-portfolio.netlify.app/" />
+
     <meta name="theme-color" content="#131316" />
-    <meta name="color-scheme" content="only light" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Prince Mahmud" />
+    <meta property="og:title" content="Prince Mahmud | Portfolio" />
+
+    <meta
+      property="og:description"
+      content="CSE student and aspiring software engineer. Explore my projects, skills and education."
+    />
+
+    <meta
+      property="og:url"
+      content="https://prince-mahmud-portfolio.netlify.app/"
+    />
+
+    <meta property="og:locale" content="en_US" />
+
+    <meta
+      property="og:image"
+      content="https://prince-mahmud-portfolio.netlify.app/photo/my%20pic.png"
+    />
+
+    <meta property="og:image:alt" content="Portrait of Prince Mahmud" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prince Mahmud | Portfolio" />
+
+    <meta
+      name="twitter:description"
+      content="CSE student and aspiring software engineer. Explore my projects, skills and education."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://prince-mahmud-portfolio.netlify.app/photo/my%20pic.png"
+    />
+
+    <meta name="twitter:image:alt" content="Portrait of Prince Mahmud" />
 
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e85d04'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EPM%3C/text%3E%3C/svg%3E"
     />
 
-    <title>Prince Mahmud | Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prince Mahmud",
+        "url": "https://prince-mahmud-portfolio.netlify.app/",
+        "image": "https://prince-mahmud-portfolio.netlify.app/photo/my%20pic.png",
+        "jobTitle": "Computer Science and Engineering Student",
+        "email": "mailto:princecccnuniversity@gmail.com",
+        "alumniOf": "CCN University of Science and Technology",
+        "sameAs": [
+          "https://github.com/princebytex",
+          "https://www.linkedin.com/in/prince-mahmud-928829358",
+          "https://www.instagram.com/mahmud_prince07",
+          "https://www.facebook.com/share/1AGdnTEZ93/"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -23,11 +89,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <style>
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        z-index: 1000;
+        background: #e85d04;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 0 0 8px 0;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        left: 0;
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="#home" class="nav-logo">PM<span>.</span></a>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Go to top">
+        PM<span>.</span>
+      </a>
 
       <div class="nav-links">
         <a href="#home">Home</a>
@@ -39,559 +128,671 @@
       </div>
 
       <a
-        href="Resources/my cv.pdf"
+        href="Resources/my%20cv.pdf"
         download="Prince_Mahmud_CV.pdf"
         class="nav-cv"
+        aria-label="Download Prince Mahmud's CV as PDF"
       >
-        <i class="fa-solid fa-download"></i>
+        <i class="fa-solid fa-download" aria-hidden="true"></i>
         Download CV
       </a>
     </nav>
 
-    <!-- HOME SECTION -->
-    <section class="home" id="home">
-      <div class="profile-card">
-        <div class="dot-line"></div>
-        <div class="dot-line-2"></div>
+    <main id="main">
+      <section class="home" id="home">
+        <div class="profile-card">
+          <div class="dot-line" aria-hidden="true"></div>
+          <div class="dot-line-2" aria-hidden="true"></div>
 
-        <div class="image-box">
-          <img
-            src="photo/my pic.png"
-            alt="Prince Mahmud"
-            width="240"
-            height="280"
-            decoding="async"
-          />
-        </div>
-
-        <div class="badge-icon">
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-
-        <h1>Prince Mahmud</h1>
-
-        <p class="description">
-          A passionate developer who loves building clean, useful and innovative
-          digital solutions.
-        </p>
-
-        <div class="social-links">
-          <a
-            href="https://github.com/princebytex"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/prince-mahmud-928829358"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-
-          <a
-            href="https://www.instagram.com/mahmud_prince07"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/share/1AGdnTEZ93/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-        </div>
-
-        <button class="hello-btn" onclick="showGreeting()">Say Hello 👋</button>
-        <p class="hello-msg" id="helloMsg"></p>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about">
-      <div class="container">
-        <div class="this-is-me-title">
-          <h2>THIS IS ME</h2>
-        </div>
-
-        <div class="this-is-me-line"></div>
-
-        <div class="this-is-me-content">
-          <div class="my-name">
-            <span>I'm Prince.</span>
+          <div class="image-box">
+            <img
+              src="photo/my%20pic.png"
+              alt="Portrait of Prince Mahmud"
+              width="240"
+              height="280"
+              decoding="async"
+              fetchpriority="high"
+            />
           </div>
 
-          <div class="my-description">
-            <p>
-              I am Prince Mahmud, a Computer Science and Engineering student at
-              CCN University of Science and Technology with a strong interest in
-              programming and web development. I enjoy exploring new
-              technologies, solving problems, and turning ideas into practical
-              solutions.
-            </p>
-
-            <p>
-              Through projects like Red Pulse, a blood donation management
-              application, and a Manufacturing Company Network simulation, I
-              have been developing my technical knowledge and gaining hands-on
-              experience. I am currently focused on improving my programming
-              fundamentals, strengthening my problem-solving skills, and
-              learning more about software development. Beyond technology, I
-              enjoy playing cricket and video games. My goal is to grow into a
-              skilled software engineer and contribute to building meaningful,
-              efficient, and user-friendly applications. Feel free to explore my
-              projects and get in touch if you would like to connect or
-              collaborate.
-            </p>
-
-            <div class="currently">
-              <h4>CURRENTLY</h4>
-              <div class="currently-line"></div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div>
-                  <h5>Computer Science Student</h5>
-                  <p>Learning and growing every day.</p>
-                </div>
-              </div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-code"></i>
-                <div>
-                  <h5>Learning & Building Projects</h5>
-                  <p>Turning ideas into practical projects.</p>
-                </div>
-              </div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-rocket"></i>
-                <div>
-                  <h5>Exploring New Technologies</h5>
-                  <p>Preparing for what's next.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="currently">
-              <h4>INTERESTS</h4>
-              <div class="currently-line"></div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-baseball-bat-ball"></i>
-                <div>
-                  <h5>Cricket</h5>
-                  <p>
-                    I enjoy playing cricket, which keeps me active and helps me
-                    develop teamwork and discipline.
-                  </p>
-                </div>
-              </div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-gamepad"></i>
-                <div>
-                  <h5>Video Games</h5>
-                  <p>
-                    I enjoy playing video games, which sharpen my
-                    problem-solving skills and strategic thinking.
-                  </p>
-                </div>
-              </div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-microchip"></i>
-                <div>
-                  <h5>Learning New Technologies</h5>
-                  <p>Exploring modern technologies, tools, and innovations.</p>
-                </div>
-              </div>
-
-              <div class="current-item">
-                <i class="fa-solid fa-lightbulb"></i>
-                <div>
-                  <h5>Problem Solving</h5>
-                  <p>
-                    Improving logical thinking through programming challenges.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION SECTION -->
-    <section id="education">
-      <div class="container">
-        <div class="section-title">
-          <h2>My <span>Education</span></h2>
-          <p>My academic journey so far.</p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-4">
-            <div class="project-card">
-              <div class="project-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <h4>BSc in CSE (Running)</h4>
-              <p>
-                CCN University of Science and Technology<br />
-                Previous semester result: 4.00
-              </p>
-              <p>
-                Currently exploring the world of computing, improving my
-                programming skills, and gaining practical experience through
-                academic and personal projects.
-              </p>
-            </div>
+          <div class="badge-icon" aria-hidden="true">
+            <i class="fa-solid fa-bolt"></i>
           </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="project-card">
-              <div class="project-icon">
-                <i class="fa-solid fa-school"></i>
-              </div>
-              <h4>HSC</h4>
-              <p>
-                Cumilla Govt College<br />
-                GPA: 4.00
-              </p>
-              <p>
-                A challenging phase of my academic journey that taught me
-                valuable lessons about consistency, growth, and overcoming
-                setbacks.
-              </p>
-            </div>
-          </div>
+          <h1>Prince Mahmud</h1>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="project-card">
-              <div class="project-icon">
-                <i class="fa-solid fa-book"></i>
-              </div>
-              <h4>SSC</h4>
-              <p>
-                Niaz Mohammad High School<br />
-                GPA: 5.00
-              </p>
-              <p>
-                A memorable chapter of my academic journey, filled with good
-                experiences, learning, and unforgettable school memories.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-title">
-          <h2>My <span>Skills</span></h2>
-          <p>Technologies I work with.</p>
-        </div>
-
-        <div class="row g-3 justify-content-center">
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/c++.png"
-                alt="C++"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>C++</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/java.png"
-                alt="Java"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>Java</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/html.png"
-                alt="HTML"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>HTML</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/css.png"
-                alt="CSS"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>CSS</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/js.png"
-                alt="JavaScript"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>JavaScript</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/mysql.png"
-                alt="MySQL"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>MySQL</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/mongo.png"
-                alt="MongoDB"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>MongoDB</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/ms_word.png"
-                alt="Microsoft Word"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>MS Word</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/excel.png"
-                alt="Microsoft Excel"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>Excel</h5>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4">
-            <div class="skill">
-              <img
-                src="photo/powerpoint.png"
-                alt="Microsoft PowerPoint"
-                class="skill-logo"
-                loading="lazy"
-              />
-              <h5>PowerPoint</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <div class="container">
-        <div class="section-title">
-          <h2>My <span>Projects</span></h2>
-          <p>A few things I've built.</p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-6 col-lg-4">
-            <a
-              href="https://github.com/princebytex/manufacturing-company-network"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              <div class="project-card">
-                <div class="project-icon">
-                  <i class="fa-solid fa-network-wired"></i>
-                </div>
-
-                <h4>Manufacturing Company Network</h4>
-
-                <p>
-                  A data communication project: a manufacturing company network
-                  designed and simulated in Cisco Packet Tracer.
-                </p>
-
-                <span class="project-more">
-                  View on GitHub
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <a
-              href="https://github.com/princebytex/red-pulse"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              <div class="project-card">
-                <div class="project-icon">
-                  <i class="fa-solid fa-heart-pulse"></i>
-                </div>
-
-                <h4>Red Pulse</h4>
-
-                <p>
-                  A blood donation management application connecting donors with
-                  people who need blood.
-                </p>
-
-                <span class="project-more">
-                  View on GitHub
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <a
-              href="https://github.com/princebytex/prince-portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              <div class="project-card">
-                <div class="project-icon">
-                  <i class="fa-solid fa-code"></i>
-                </div>
-
-                <h4>Personal Portfolio Website</h4>
-
-                <p>
-                  A personal portfolio website showcasing my profile, academic
-                  background, technical skills, and projects, built using HTML,
-                  CSS and JavaScript.
-                </p>
-
-                <span class="project-more">
-                  View on GitHub
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2>Any <span>Idea in Mind?</span></h2>
-          <p>
-            Have a project, collaboration, or something you'd like to discuss?
-            Feel free to reach out.
+          <p class="description">
+            CSE student and aspiring software engineer who loves building clean,
+            useful and innovative digital solutions.
           </p>
-        </div>
 
-        <div class="contact-options">
-          <a href="mailto:princecccnuniversity@gmail.com" class="contact-card">
-            <div class="contact-icon">
-              <i class="fa-regular fa-envelope"></i>
+          <div class="social-links">
+            <a
+              href="https://github.com/princebytex"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/prince-mahmud-928829358"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/mahmud_prince07"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1AGdnTEZ93/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <button type="button" class="hello-btn" onclick="showGreeting()">
+            Say Hello <span aria-hidden="true">👋</span>
+          </button>
+
+          <p
+            class="hello-msg"
+            id="helloMsg"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="this-is-me-title">
+            <h2 id="about-title">THIS IS ME</h2>
+          </div>
+
+          <div class="this-is-me-line"></div>
+
+          <div class="this-is-me-content">
+            <div class="my-name">
+              <span>I'm Prince.</span>
             </div>
 
-            <div>
-              <small>EMAIL</small>
-              <h5>princecccnuniversity@gmail.com</h5>
+            <div class="my-description">
+              <p>
+                I'm a Computer Science and Engineering student at CCN University
+                of Science and Technology. I'm really into programming and web
+                development, and I love solving problems and turning ideas into
+                things that actually work.
+              </p>
+
+              <p>
+                So far I've worked on projects like <strong>Red Pulse</strong>,
+                a Java-based blood donation management application developed
+                using Android Studio, and a
+                <strong>Manufacturing Company Network</strong> simulation in
+                Cisco Packet Tracer. Right now I'm focusing on making my
+                programming basics and problem-solving skills stronger. Down the
+                road, I want to grow into a software engineer who builds useful,
+                efficient and easy-to-use applications.
+              </p>
+
+              <p>
+                Take a look around my projects, and if you'd like to connect or
+                work together, feel free to reach out.
+              </p>
+
+              <div class="currently">
+                <h4>CURRENTLY</h4>
+                <div class="currently-line"></div>
+
+                <div class="current-item">
+                  <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+
+                  <div>
+                    <h5>BSc in Computer Science &amp; Engineering</h5>
+                    <p>Studying at CCN University of Science and Technology.</p>
+                  </div>
+                </div>
+
+                <div class="current-item">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
+
+                  <div>
+                    <h5>Building Projects</h5>
+                    <p>Turning ideas into practical, working applications.</p>
+                  </div>
+                </div>
+
+                <div class="current-item">
+                  <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+
+                  <div>
+                    <h5>Exploring New Technologies</h5>
+                    <p>Learning modern tools and preparing for what's next.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="currently">
+                <h4>INTERESTS</h4>
+                <div class="currently-line"></div>
+
+                <div class="current-item">
+                  <i
+                    class="fa-solid fa-baseball-bat-ball"
+                    aria-hidden="true"
+                  ></i>
+
+                  <div>
+                    <h5>Cricket</h5>
+
+                    <p>
+                      Keeps me active and helps me build teamwork and
+                      discipline.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="current-item">
+                  <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+
+                  <div>
+                    <h5>Video Games</h5>
+                    <p>Sharpens my problem-solving and strategic thinking.</p>
+                  </div>
+                </div>
+
+                <div class="current-item">
+                  <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+
+                  <div>
+                    <h5>Problem Solving</h5>
+
+                    <p>
+                      Improving logical thinking through programming challenges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="education-title">My <span>Education</span></h2>
+            <p>My academic journey so far.</p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-icon">
+                  <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+
+                <h4>BSc in CSE (Ongoing)</h4>
+
+                <p>
+                  CCN University of Science and Technology<br />
+                  Previous semester result: 4.00
+                </p>
+
+                <p>
+                  Currently exploring the world of computing, improving my
+                  programming skills, and gaining practical experience through
+                  academic and personal projects.
+                </p>
+              </div>
             </div>
 
-            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
-          </a>
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-icon">
+                  <i class="fa-solid fa-school" aria-hidden="true"></i>
+                </div>
+
+                <h4>Higher Secondary Certificate (HSC)</h4>
+
+                <p>
+                  Cumilla Govt. College<br />
+                  GPA: 4.00 / 5.00
+                </p>
+
+                <p>
+                  A phase that taught me consistency and resilience, and shaped
+                  the way I keep moving forward.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="project-card">
+                <div class="project-icon">
+                  <i class="fa-solid fa-book" aria-hidden="true"></i>
+                </div>
+
+                <h4>Secondary School Certificate (SSC)</h4>
+
+                <p>
+                  Niaz Mohammad High School<br />
+                  GPA: 5.00 / 5.00
+                </p>
+
+                <p>
+                  A memorable chapter of my academic journey, filled with good
+                  experiences, early learning, and lasting school memories.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="social-links contact-socials">
-          <a
-            href="https://github.com/princebytex"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
+      <section id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="skills-title">My <span>Skills</span></h2>
+            <p>Technologies I work with.</p>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/prince-mahmud-928829358"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/c++.png"
+                  alt="C++ logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>C++</h5>
+              </div>
+            </div>
 
-          <a
-            href="https://www.instagram.com/mahmud_prince07"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/java.png"
+                  alt="Java logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>Java</h5>
+              </div>
+            </div>
 
-          <a
-            href="https://www.facebook.com/share/1AGdnTEZ93/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/html.png"
+                  alt="HTML logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>HTML</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/css.png"
+                  alt="CSS logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>CSS</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/js.png"
+                  alt="JavaScript logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>JavaScript</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/mysql.png"
+                  alt="MySQL logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>MySQL</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/mongo.png"
+                  alt="MongoDB logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>MongoDB</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/ms_word.png"
+                  alt="Microsoft Word logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>MS Word</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/excel.png"
+                  alt="Microsoft Excel logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>Excel</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/powerpoint.png"
+                  alt="Microsoft PowerPoint logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>PowerPoint</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/android-studio.png"
+                  alt="Android Studio logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>Android Studio</h5>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+              <div class="skill">
+                <img
+                  src="photo/github.png"
+                  alt="GitHub logo"
+                  class="skill-logo"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h5>GitHub</h5>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>© 2026 Prince Mahmud · Built with curiosity & code.</footer>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="projects-title">My <span>Projects</span></h2>
+            <p>A few things I've built.</p>
+          </div>
 
-    <script src="script.js"></script>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <a
+                href="https://github.com/princebytex/manufacturing-company-network"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="Manufacturing Company Network, view on GitHub (opens in a new tab)"
+              >
+                <div class="project-card">
+                  <div class="project-icon">
+                    <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                  </div>
+
+                  <h4>Manufacturing Company Network</h4>
+
+                  <p>
+                    A data communication project: a manufacturing company
+                    network designed and simulated in Cisco Packet Tracer.
+                  </p>
+
+                  <p>
+                    <small> <strong>Tools:</strong> Cisco Packet Tracer </small>
+                  </p>
+
+                  <span class="project-more">
+                    View on GitHub
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a
+                href="https://github.com/princebytex/red-pulse"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="Red Pulse, view on GitHub (opens in a new tab)"
+              >
+                <div class="project-card">
+                  <div class="project-icon">
+                    <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                  </div>
+
+                  <h4>Red Pulse</h4>
+
+                  <p>
+                    A blood donation management application developed with Java
+                    in Android Studio to connect blood donors with people who
+                    need blood.
+                  </p>
+
+                  <p>
+                    <small> <strong>Tech:</strong> Java, Android Studio </small>
+                  </p>
+
+                  <span class="project-more">
+                    View on GitHub
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a
+                href="https://github.com/princebytex/prince-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+                aria-label="Personal Portfolio Website, view on GitHub (opens in a new tab)"
+              >
+                <div class="project-card">
+                  <div class="project-icon">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                  </div>
+
+                  <h4>Personal Portfolio Website</h4>
+
+                  <p>
+                    A responsive portfolio website showcasing my profile,
+                    education, skills and projects.
+                  </p>
+
+                  <p>
+                    <small>
+                      <strong>Tech:</strong> HTML, CSS, JavaScript
+                    </small>
+                  </p>
+
+                  <span class="project-more">
+                    View on GitHub
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-title">
+            <h2 id="contact-title">Any <span>Idea in Mind?</span></h2>
+
+            <p>
+              Have a project, collaboration, or something you'd like to discuss?
+              Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-options">
+            <a
+              href="mailto:princecccnuniversity@gmail.com"
+              class="contact-card"
+              aria-label="Send an email to princecccnuniversity@gmail.com"
+            >
+              <div class="contact-icon">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </div>
+
+              <div>
+                <small>EMAIL</small>
+                <h5>princecccnuniversity@gmail.com</h5>
+              </div>
+
+              <i
+                class="fa-solid fa-arrow-up-right-from-square arrow"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+
+          <div class="social-links contact-socials">
+            <a
+              href="https://github.com/princebytex"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/prince-mahmud-928829358"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/mahmud_prince07"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1AGdnTEZ93/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook profile (opens in a new tab)"
+            >
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Prince Mahmud · Built with curiosity &amp; code ·
+      <a href="#home" style="color: var(--primary)"> Back to top ↑ </a>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
