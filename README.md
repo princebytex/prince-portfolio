@@ -44,7 +44,8 @@ prince-portfolio/
 │   ├── powerpoint.png
 │   ├── excel.png
 │   ├── ms_word.png
-│   └── redpulse.png
+│   ├── android-studio.png
+│   └── github.png
 ├── Resources/
 │   └── my cv.pdf
 └── README.md
